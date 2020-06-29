@@ -1,0 +1,1582 @@
+Prefix(:=<http://www.w3.org/ns/activitystreams#>)
+Prefix(as:=<http://www.w3.org/ns/activitystreams#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(prov:=<http://www.w3.org/ns/prov#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.w3.org/ns/activitystreams#>
+Import(<http://www.w3.org/ns/prov-o#>)
+Annotation(rdfs:comment "Extended Activity Streams 2.0 Vocabulary"@en)
+Annotation(rdfs:label "Activity Streams 2.0"@en)
+
+Declaration(Class(rdf:List))
+Declaration(Class(as:Accept))
+Declaration(Class(as:Achieve))
+Declaration(Class(as:Activity))
+Declaration(Class(as:ActivityHandler))
+Declaration(Class(as:Actor))
+Declaration(Class(as:Add))
+Declaration(Class(as:Album))
+Declaration(Class(as:Announce))
+Declaration(Class(as:Application))
+Declaration(Class(as:Arrive))
+Declaration(Class(as:Article))
+Declaration(Class(as:Assign))
+Declaration(Class(as:Audio))
+Declaration(Class(as:Block))
+Declaration(Class(as:BrowserView))
+Declaration(Class(as:Collection))
+Declaration(Class(as:Complete))
+Declaration(Class(as:Confirm))
+Declaration(Class(as:Connect))
+Declaration(Class(as:Content))
+Declaration(Class(as:Create))
+Declaration(Class(as:Delete))
+Declaration(Class(as:Device))
+Declaration(Class(as:Dislike))
+Declaration(Class(as:Document))
+Declaration(Class(as:EmbeddedView))
+Declaration(Class(as:Event))
+Declaration(Class(as:Experience))
+Declaration(Class(as:Favorite))
+Declaration(Class(as:Flag))
+Declaration(Class(as:Folder))
+Declaration(Class(as:Follow))
+Declaration(Class(as:FriendRequest))
+Declaration(Class(as:Give))
+Declaration(Class(as:Group))
+Declaration(Class(as:HtmlForm))
+Declaration(Class(as:HttpHeader))
+Declaration(Class(as:HttpRequest))
+Declaration(Class(as:Ignore))
+Declaration(Class(as:Image))
+Declaration(Class(as:IntransitiveActivity))
+Declaration(Class(as:Invite))
+Declaration(Class(as:Join))
+Declaration(Class(as:Leave))
+Declaration(Class(as:Like))
+Declaration(Class(as:Link))
+Declaration(Class(as:LinkNotHandler))
+Declaration(Class(as:Listen))
+Declaration(Class(as:Mention))
+Declaration(Class(as:Move))
+Declaration(Class(as:Note))
+Declaration(Class(as:Object))
+Declaration(Class(as:Offer))
+Declaration(Class(as:OrderedCollection))
+Declaration(Class(as:OrderedItems))
+Declaration(Class(as:Organization))
+Declaration(Class(as:Page))
+Declaration(Class(as:Parameter))
+Declaration(Class(as:Payload))
+Declaration(Class(as:Person))
+Declaration(Class(as:Place))
+Declaration(Class(as:PossibleAnswer))
+Declaration(Class(as:Post))
+Declaration(Class(as:Process))
+Declaration(Class(as:Question))
+Declaration(Class(as:Read))
+Declaration(Class(as:Reject))
+Declaration(Class(as:Remove))
+Declaration(Class(as:Reservation))
+Declaration(Class(as:Respond))
+Declaration(Class(as:Review))
+Declaration(Class(as:Role))
+Declaration(Class(as:Save))
+Declaration(Class(as:Service))
+Declaration(Class(as:Share))
+Declaration(Class(as:Story))
+Declaration(Class(as:Tag))
+Declaration(Class(as:TentativeAccept))
+Declaration(Class(as:TentativeReject))
+Declaration(Class(as:Travel))
+Declaration(Class(as:Undo))
+Declaration(Class(as:Update))
+Declaration(Class(as:UrlTemplate))
+Declaration(Class(as:Video))
+Declaration(Class(as:View))
+Declaration(Class(as:Watch))
+Declaration(Class(prov:Accept))
+Declaration(Class(prov:Create))
+Declaration(Class(prov:Modify))
+Declaration(Class(prov:Publish))
+Declaration(ObjectProperty(rdf:first))
+Declaration(ObjectProperty(rdf:rest))
+Declaration(ObjectProperty(as:action))
+Declaration(ObjectProperty(as:actor))
+Declaration(ObjectProperty(as:actorOf))
+Declaration(ObjectProperty(as:anyOf))
+Declaration(ObjectProperty(as:attachedTo))
+Declaration(ObjectProperty(as:attachment))
+Declaration(ObjectProperty(as:attachments))
+Declaration(ObjectProperty(as:attributedTo))
+Declaration(ObjectProperty(as:attributedWith))
+Declaration(ObjectProperty(as:author))
+Declaration(ObjectProperty(as:authorOf))
+Declaration(ObjectProperty(as:bcc))
+Declaration(ObjectProperty(as:bto))
+Declaration(ObjectProperty(as:cc))
+Declaration(ObjectProperty(as:context))
+Declaration(ObjectProperty(as:contextOf))
+Declaration(ObjectProperty(as:current))
+Declaration(ObjectProperty(as:first))
+Declaration(ObjectProperty(as:generator))
+Declaration(ObjectProperty(as:generatorOf))
+Declaration(ObjectProperty(as:handlerFor))
+Declaration(ObjectProperty(as:hasExpectedInput))
+Declaration(ObjectProperty(as:hasPotentialResult))
+Declaration(ObjectProperty(as:hasPreference))
+Declaration(ObjectProperty(as:hasRequirement))
+Declaration(ObjectProperty(as:hreftemplate))
+Declaration(ObjectProperty(as:icon))
+Declaration(ObjectProperty(as:iconFor))
+Declaration(ObjectProperty(as:image))
+Declaration(ObjectProperty(as:imageOf))
+Declaration(ObjectProperty(as:inReplyTo))
+Declaration(ObjectProperty(as:instrument))
+Declaration(ObjectProperty(as:instrumentOf))
+Declaration(ObjectProperty(as:items))
+Declaration(ObjectProperty(as:last))
+Declaration(ObjectProperty(as:location))
+Declaration(ObjectProperty(as:locationOf))
+Declaration(ObjectProperty(as:memberOf))
+Declaration(ObjectProperty(as:next))
+Declaration(ObjectProperty(as:object))
+Declaration(ObjectProperty(as:objectOf))
+Declaration(ObjectProperty(as:oneOf))
+Declaration(ObjectProperty(as:origin))
+Declaration(ObjectProperty(as:originOf))
+Declaration(ObjectProperty(as:parameter))
+Declaration(ObjectProperty(as:participant))
+Declaration(ObjectProperty(as:participantOf))
+Declaration(ObjectProperty(as:prev))
+Declaration(ObjectProperty(as:preview))
+Declaration(ObjectProperty(as:previewOf))
+Declaration(ObjectProperty(as:provider))
+Declaration(ObjectProperty(as:providerOf))
+Declaration(ObjectProperty(as:replies))
+Declaration(ObjectProperty(as:result))
+Declaration(ObjectProperty(as:resultOf))
+Declaration(ObjectProperty(as:role))
+Declaration(ObjectProperty(as:scope))
+Declaration(ObjectProperty(as:scopeOf))
+Declaration(ObjectProperty(as:self))
+Declaration(ObjectProperty(as:shape))
+Declaration(ObjectProperty(as:tag))
+Declaration(ObjectProperty(as:tagOf))
+Declaration(ObjectProperty(as:tags))
+Declaration(ObjectProperty(as:target))
+Declaration(ObjectProperty(as:targetOf))
+Declaration(ObjectProperty(as:to))
+Declaration(ObjectProperty(as:url))
+Declaration(ObjectProperty(as:using))
+Declaration(DataProperty(as:accuracy))
+Declaration(DataProperty(as:alias))
+Declaration(DataProperty(as:altitude))
+Declaration(DataProperty(as:browserContext))
+Declaration(DataProperty(as:confirm))
+Declaration(DataProperty(as:content))
+Declaration(DataProperty(as:displayName))
+Declaration(DataProperty(as:downstreamDuplicates))
+Declaration(DataProperty(as:duration))
+Declaration(DataProperty(as:endTime))
+Declaration(DataProperty(as:height))
+Declaration(DataProperty(as:href))
+Declaration(DataProperty(as:hreflang))
+Declaration(DataProperty(as:id))
+Declaration(DataProperty(as:itemsPerPage))
+Declaration(DataProperty(as:latitude))
+Declaration(DataProperty(as:longitude))
+Declaration(DataProperty(as:mediaType))
+Declaration(DataProperty(as:method))
+Declaration(DataProperty(as:name))
+Declaration(DataProperty(as:objectType))
+Declaration(DataProperty(as:optional))
+Declaration(DataProperty(as:priority))
+Declaration(DataProperty(as:published))
+Declaration(DataProperty(as:radius))
+Declaration(DataProperty(as:rating))
+Declaration(DataProperty(as:rel))
+Declaration(DataProperty(as:sandbox))
+Declaration(DataProperty(as:startIndex))
+Declaration(DataProperty(as:startTime))
+Declaration(DataProperty(as:status))
+Declaration(DataProperty(as:summary))
+Declaration(DataProperty(as:template))
+Declaration(DataProperty(as:title))
+Declaration(DataProperty(as:totalItems))
+Declaration(DataProperty(as:units))
+Declaration(DataProperty(as:updated))
+Declaration(DataProperty(as:upstreamDuplicates))
+Declaration(DataProperty(as:verb))
+Declaration(DataProperty(as:width))
+Declaration(NamedIndividual(rdf:nil))
+Declaration(AnnotationProperty(rdfs:displayName))
+Declaration(Datatype(rdf:langString))
+Declaration(Datatype(xsd:duration))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.w3.org/ns/activitystreams#action> (action)
+
+AnnotationAssertion(rdfs:comment as:action "Specifies an potential action for the object"@en)
+AnnotationAssertion(rdfs:label as:action "action"@en)
+ObjectPropertyDomain(as:action as:Object)
+ObjectPropertyRange(as:action as:Activity)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#actor> (actor)
+
+AnnotationAssertion(rdfs:comment as:actor "Subproperty of as:attributedTo that identifies the primary actor"@en)
+AnnotationAssertion(rdfs:label as:actor "actor"@en)
+SubObjectPropertyOf(as:actor as:attributedTo)
+InverseObjectProperties(as:actorOf as:actor)
+ObjectPropertyDomain(as:actor as:Activity)
+ObjectPropertyRange(as:actor ObjectUnionOf(as:Actor as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#actorOf> (actorOf)
+
+AnnotationAssertion(rdfs:label as:actorOf "actorOf"@en)
+SubObjectPropertyOf(as:actorOf as:attributedWith)
+ObjectPropertyDomain(as:actorOf ObjectUnionOf(as:Actor as:LinkNotHandler))
+ObjectPropertyRange(as:actorOf as:Activity)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#anyOf> (oneOf)
+
+AnnotationAssertion(rdfs:comment as:anyOf "Describes a possible inclusive answer or option for a question."@en)
+AnnotationAssertion(rdfs:label as:anyOf "oneOf"@en)
+ObjectPropertyDomain(as:anyOf as:Question)
+ObjectPropertyRange(as:anyOf ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#attachedTo> (attachedTo)
+
+AnnotationAssertion(rdfs:comment as:attachedTo "Identifies an entity this object is attached to"@en)
+AnnotationAssertion(rdfs:label as:attachedTo "attachedTo"@en)
+InverseObjectProperties(as:attachedTo as:attachment)
+ObjectPropertyDomain(as:attachedTo ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:attachedTo ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#attachment> (attachment)
+
+AnnotationAssertion(rdfs:label as:attachment "attachment"@en)
+EquivalentObjectProperties(as:attachment as:attachments)
+ObjectPropertyDomain(as:attachment as:Object)
+ObjectPropertyRange(as:attachment ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#attachments> (attachments)
+
+AnnotationAssertion(rdfs:label as:attachments "attachments"@en)
+AnnotationAssertion(owl:deprecated as:attachments "true"^^xsd:boolean)
+ObjectPropertyDomain(as:attachments as:Object)
+ObjectPropertyRange(as:attachments ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#attributedTo> (attributedTo)
+
+AnnotationAssertion(rdfs:comment as:attributedTo "Identifies an entity to which an object is attributed"@en)
+AnnotationAssertion(rdfs:label as:attributedTo "attributedTo"@en)
+SubObjectPropertyOf(as:attributedTo prov:wasAttributedTo)
+InverseObjectProperties(as:attributedWith as:attributedTo)
+ObjectPropertyDomain(as:attributedTo ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:attributedTo ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#attributedWith> (attributedWith)
+
+AnnotationAssertion(rdfs:comment as:attributedWith "Identifies entities to which an object is attribute"@en)
+AnnotationAssertion(rdfs:label as:attributedWith "attributedWith"@en)
+ObjectPropertyDomain(as:attributedWith ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:attributedWith ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#author> (author)
+
+AnnotationAssertion(rdfs:comment as:author "Identifies the author of an object. Deprecated. Use as:attributedTo instead"@en)
+AnnotationAssertion(rdfs:label as:author "author"@en)
+AnnotationAssertion(owl:deprecated as:author "true"^^xsd:boolean)
+SubObjectPropertyOf(as:author as:attributedTo)
+InverseObjectProperties(as:authorOf as:author)
+ObjectPropertyDomain(as:author as:Content)
+ObjectPropertyRange(as:author ObjectUnionOf(as:Actor as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#authorOf> (authorOf)
+
+AnnotationAssertion(rdfs:comment as:authorOf "Identifies an object for which this actor is an author. Deprecated. Use as:attributedWith instead"@en)
+AnnotationAssertion(rdfs:label as:authorOf "authorOf"@en)
+AnnotationAssertion(owl:deprecated as:authorOf "true"^^xsd:boolean)
+SubObjectPropertyOf(as:authorOf as:attributedWith)
+ObjectPropertyDomain(as:authorOf as:Actor)
+ObjectPropertyRange(as:authorOf ObjectUnionOf(as:Actor as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#bcc> (bcc)
+
+AnnotationAssertion(rdfs:label as:bcc "bcc"@en)
+ObjectPropertyDomain(as:bcc as:Activity)
+ObjectPropertyRange(as:bcc ObjectUnionOf(as:Actor as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#bto> (bto)
+
+AnnotationAssertion(rdfs:label as:bto "bto"@en)
+ObjectPropertyDomain(as:bto as:Activity)
+ObjectPropertyRange(as:bto ObjectUnionOf(as:Actor as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#cc> (cc)
+
+AnnotationAssertion(rdfs:label as:cc "cc"@en)
+ObjectPropertyDomain(as:cc as:Activity)
+ObjectPropertyRange(as:cc ObjectUnionOf(as:Actor as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#content> (content)
+
+AnnotationAssertion(rdfs:comment as:content "The content of the object."@en)
+AnnotationAssertion(rdfs:label as:content "content"@en)
+ObjectPropertyDomain(as:content as:Object)
+ObjectPropertyRange(as:content ObjectUnionOf(rdf:langString xsd:string))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#context> (context)
+
+AnnotationAssertion(rdfs:comment as:context "Specifies the context within which an object exists or an activity was performed"@en)
+AnnotationAssertion(rdfs:label as:context "context"@en)
+InverseObjectProperties(as:contextOf as:context)
+ObjectPropertyDomain(as:context as:Object)
+ObjectPropertyRange(as:context ObjectUnionOf(as:Actor as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#contextOf> (contextOf)
+
+AnnotationAssertion(rdfs:label as:contextOf "contextOf"@en)
+ObjectPropertyDomain(as:contextOf ObjectUnionOf(as:Actor as:LinkNotHandler))
+ObjectPropertyRange(as:contextOf ObjectUnionOf(as:Actor as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#current> (current)
+
+AnnotationAssertion(rdfs:label as:current "current"@en)
+FunctionalObjectProperty(as:current)
+ObjectPropertyDomain(as:current as:Collection)
+ObjectPropertyRange(as:current ObjectUnionOf(as:Collection as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#displayName> (displayName)
+
+AnnotationAssertion(rdfs:displayName as:displayName "The default, plain-text display name of the object or link."@en)
+AnnotationAssertion(rdfs:label as:displayName "displayName"@en)
+ObjectPropertyDomain(as:displayName ObjectUnionOf(as:Link as:Object))
+ObjectPropertyRange(as:displayName ObjectUnionOf(rdf:langString xsd:string))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#duration> (duration)
+
+AnnotationAssertion(rdfs:comment as:duration "The duration of the object"@en)
+AnnotationAssertion(rdfs:label as:duration "duration"@en)
+FunctionalObjectProperty(as:duration)
+ObjectPropertyDomain(as:duration ObjectUnionOf(as:Content as:Link))
+ObjectPropertyRange(as:duration ObjectUnionOf(xsd:duration xsd:nonNegativeInteger))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#first> (first)
+
+AnnotationAssertion(rdfs:label as:first "first"@en)
+FunctionalObjectProperty(as:first)
+ObjectPropertyDomain(as:first as:Collection)
+ObjectPropertyRange(as:first ObjectUnionOf(as:Collection as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#generator> (generator)
+
+AnnotationAssertion(rdfs:label as:generator "generator"@en)
+InverseObjectProperties(as:generatorOf as:generator)
+ObjectPropertyDomain(as:generator as:Object)
+ObjectPropertyRange(as:generator ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#generatorOf> (generatorOf)
+
+AnnotationAssertion(rdfs:label as:generatorOf "generatorOf"@en)
+ObjectPropertyDomain(as:generatorOf ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:generatorOf ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#handlerFor> (handlerFor)
+
+AnnotationAssertion(rdfs:comment as:handlerFor "Describes the Activity an ActivityHandler is intended to carry out"@en)
+AnnotationAssertion(rdfs:label as:handlerFor "handlerFor"@en)
+InverseObjectProperties(as:handlerFor as:using)
+ObjectPropertyDomain(as:handlerFor as:ActivityHandler)
+ObjectPropertyRange(as:handlerFor as:Activity)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#hasExpectedInput> (hasExpectedInput)
+
+AnnotationAssertion(rdfs:comment as:hasExpectedInput "Describes something that an ActivityHandler expects as input"@en)
+AnnotationAssertion(rdfs:label as:hasExpectedInput "hasExpectedInput"@en)
+ObjectPropertyDomain(as:hasExpectedInput as:ActivityHandler)
+ObjectPropertyRange(as:hasExpectedInput owl:Thing)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#hasPotentialResult> (hasPotentialResult)
+
+AnnotationAssertion(rdfs:comment as:hasPotentialResult "Describes a potential result of an ActivityHandler"@en)
+AnnotationAssertion(rdfs:label as:hasPotentialResult "hasPotentialResult"@en)
+ObjectPropertyDomain(as:hasPotentialResult as:ActivityHandler)
+ObjectPropertyRange(as:hasPotentialResult owl:Thing)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#hasPreference> (hasPreference)
+
+AnnotationAssertion(rdfs:comment as:hasPreference "Describes something that an ActivityHandler prefers"@en)
+AnnotationAssertion(rdfs:label as:hasPreference "hasPreference"@en)
+ObjectPropertyDomain(as:hasPreference as:ActivityHandler)
+ObjectPropertyRange(as:hasPreference owl:Thing)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#hasRequirement> (hasRequirement)
+
+AnnotationAssertion(rdfs:comment as:hasRequirement "Describes something that an ActivityHandler requires"@en)
+AnnotationAssertion(rdfs:label as:hasRequirement "hasRequirement"@en)
+ObjectPropertyDomain(as:hasRequirement as:ActivityHandler)
+ObjectPropertyRange(as:hasRequirement owl:Thing)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#hreftemplate> (hreftemplate)
+
+AnnotationAssertion(rdfs:label as:hreftemplate "hreftemplate"@en)
+FunctionalObjectProperty(as:hreftemplate)
+ObjectPropertyDomain(as:hreftemplate ObjectUnionOf(as:BrowserView as:HttpRequest))
+ObjectPropertyRange(as:hreftemplate as:UrlTemplate)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#icon> (icon)
+
+AnnotationAssertion(rdfs:label as:icon "icon"@en)
+InverseObjectProperties(as:iconFor as:icon)
+ObjectPropertyDomain(as:icon as:Object)
+ObjectPropertyRange(as:icon ObjectUnionOf(as:Image as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#iconFor> (iconFor)
+
+AnnotationAssertion(rdfs:label as:iconFor "iconFor"@en)
+ObjectPropertyDomain(as:iconFor ObjectUnionOf(as:Image as:LinkNotHandler))
+ObjectPropertyRange(as:iconFor ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#image> (image)
+
+AnnotationAssertion(rdfs:label as:image "image"@en)
+InverseObjectProperties(as:imageOf as:image)
+ObjectPropertyDomain(as:image as:Object)
+ObjectPropertyRange(as:image ObjectUnionOf(as:Image as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#imageOf> (imageOf)
+
+AnnotationAssertion(rdfs:label as:imageOf "imageOf"@en)
+ObjectPropertyDomain(as:imageOf ObjectUnionOf(as:Image as:LinkNotHandler))
+ObjectPropertyRange(as:imageOf ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#inReplyTo> (inReplyTo)
+
+AnnotationAssertion(rdfs:label as:inReplyTo "inReplyTo"@en)
+ObjectPropertyDomain(as:inReplyTo as:Object)
+ObjectPropertyRange(as:inReplyTo ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#instrument> (instrument)
+
+AnnotationAssertion(rdfs:label as:instrument "instrument"@en)
+SubObjectPropertyOf(as:instrument prov:used)
+InverseObjectProperties(as:instrumentOf as:instrument)
+ObjectPropertyDomain(as:instrument as:Activity)
+ObjectPropertyRange(as:instrument ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#instrumentOf> (instrumentOf)
+
+AnnotationAssertion(rdfs:label as:instrumentOf "instrumentOf"@en)
+ObjectPropertyDomain(as:instrumentOf ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:instrumentOf as:Activity)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#items> (items)
+
+AnnotationAssertion(rdfs:label as:items "items"@en)
+SubObjectPropertyOf(as:items prov:hadMember)
+InverseObjectProperties(as:memberOf as:items)
+FunctionalObjectProperty(as:items)
+ObjectPropertyDomain(as:items as:Collection)
+ObjectPropertyRange(as:items ObjectUnionOf(as:OrderedItems ObjectUnionOf(as:LinkNotHandler as:Object)))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#last> (last)
+
+AnnotationAssertion(rdfs:label as:last "last"@en)
+FunctionalObjectProperty(as:last)
+ObjectPropertyDomain(as:last as:Collection)
+ObjectPropertyRange(as:last ObjectUnionOf(as:Collection as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#location> (location)
+
+AnnotationAssertion(rdfs:label as:location "location"@en)
+SubObjectPropertyOf(as:location prov:atLocation)
+InverseObjectProperties(as:locationOf as:location)
+ObjectPropertyDomain(as:location as:Object)
+ObjectPropertyRange(as:location ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#locationOf> (locationOf)
+
+AnnotationAssertion(rdfs:label as:locationOf "locationOf"@en)
+ObjectPropertyDomain(as:locationOf ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:locationOf ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#memberOf> (memberOf)
+
+AnnotationAssertion(rdfs:label as:memberOf "memberOf"@en)
+ObjectPropertyDomain(as:memberOf ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:memberOf as:Collection)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#next> (next)
+
+AnnotationAssertion(rdfs:label as:next "next"@en)
+FunctionalObjectProperty(as:next)
+ObjectPropertyDomain(as:next as:Collection)
+ObjectPropertyRange(as:next ObjectUnionOf(as:Collection as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#object> (object)
+
+AnnotationAssertion(rdfs:label as:object "object"@en)
+InverseObjectProperties(as:objectOf as:object)
+ObjectPropertyDomain(as:object as:Activity)
+ObjectPropertyRange(as:object ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#objectOf> (objectOf)
+
+AnnotationAssertion(rdfs:comment as:objectOf "Identifies Activities for which this object is the object of"@en)
+AnnotationAssertion(rdfs:label as:objectOf "objectOf"@en)
+ObjectPropertyDomain(as:objectOf ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:objectOf as:Activity)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#oneOf> (oneOf)
+
+AnnotationAssertion(rdfs:comment as:oneOf "Describes a possible exclusive answer or option for a question."@en)
+AnnotationAssertion(rdfs:label as:oneOf "oneOf"@en)
+ObjectPropertyDomain(as:oneOf as:Question)
+ObjectPropertyRange(as:oneOf ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#origin> (origin)
+
+AnnotationAssertion(rdfs:comment as:origin "For certain activities, specifies the entity from which the action is directed."@en)
+AnnotationAssertion(rdfs:label as:origin "origin"@en)
+InverseObjectProperties(as:originOf as:origin)
+ObjectPropertyDomain(as:origin as:Activity)
+ObjectPropertyRange(as:origin ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#originOf> (originOf)
+
+AnnotationAssertion(rdfs:label as:originOf "originOf"@en)
+ObjectPropertyDomain(as:originOf ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:originOf as:Activity)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#parameter> (parameter)
+
+AnnotationAssertion(rdfs:comment as:parameter "A parameter"@en)
+AnnotationAssertion(rdfs:label as:parameter "parameter"@en)
+ObjectPropertyDomain(as:parameter ObjectUnionOf(as:HtmlForm as:UrlTemplate))
+ObjectPropertyRange(as:parameter as:Parameter)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#participant> (participant)
+
+AnnotationAssertion(rdfs:label as:participant "participant"@en)
+SubObjectPropertyOf(as:participant prov:wasAssociatedWith)
+InverseObjectProperties(as:participantOf as:participant)
+ObjectPropertyDomain(as:participant as:Activity)
+ObjectPropertyRange(as:participant ObjectUnionOf(as:Actor as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#participantOf> (participantOf)
+
+AnnotationAssertion(rdfs:label as:participantOf "participantOf"@en)
+ObjectPropertyDomain(as:participantOf ObjectUnionOf(as:Actor as:LinkNotHandler))
+ObjectPropertyRange(as:participantOf as:Activity)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#prev> (prev)
+
+AnnotationAssertion(rdfs:label as:prev "prev"@en)
+FunctionalObjectProperty(as:prev)
+ObjectPropertyDomain(as:prev as:Collection)
+ObjectPropertyRange(as:prev ObjectUnionOf(as:Collection as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#preview> (preview)
+
+AnnotationAssertion(rdfs:label as:preview "preview"@en)
+InverseObjectProperties(as:previewOf as:preview)
+ObjectPropertyDomain(as:preview ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:preview ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#previewOf> (previewOf)
+
+AnnotationAssertion(rdfs:label as:previewOf "previewOf"@en)
+ObjectPropertyDomain(as:previewOf ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:previewOf ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#provider> (provider)
+
+AnnotationAssertion(rdfs:label as:provider "provider"@en)
+InverseObjectProperties(as:providerOf as:provider)
+ObjectPropertyDomain(as:provider as:Object)
+ObjectPropertyRange(as:provider ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#providerOf> (providerOf)
+
+AnnotationAssertion(rdfs:label as:providerOf "providerOf"@en)
+ObjectPropertyDomain(as:providerOf ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:providerOf ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#replies> (replies)
+
+AnnotationAssertion(rdfs:label as:replies "replies"@en)
+ObjectPropertyDomain(as:replies as:Object)
+ObjectPropertyRange(as:replies as:Collection)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#result> (result)
+
+AnnotationAssertion(rdfs:label as:result "result"@en)
+SubObjectPropertyOf(as:result as:attributedWith)
+SubObjectPropertyOf(as:result prov:generated)
+InverseObjectProperties(as:resultOf as:result)
+ObjectPropertyDomain(as:result as:Activity)
+ObjectPropertyRange(as:result ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#resultOf> (resultOf)
+
+AnnotationAssertion(rdfs:label as:resultOf "resultOf"@en)
+SubObjectPropertyOf(as:resultOf as:attributedTo)
+SubObjectPropertyOf(as:resultOf prov:wasGeneratedBy)
+ObjectPropertyDomain(as:resultOf ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:resultOf as:Activity)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#role> (role)
+
+AnnotationAssertion(rdfs:comment as:role "Identifies the semantic role of a Parameter."@en)
+AnnotationAssertion(rdfs:label as:role "role"@en)
+ObjectPropertyDomain(as:role as:Parameter)
+ObjectPropertyRange(as:role ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#scope> (scope)
+
+AnnotationAssertion(rdfs:label as:scope "scope"@en)
+InverseObjectProperties(as:scopeOf as:scope)
+ObjectPropertyDomain(as:scope as:Object)
+ObjectPropertyRange(as:scope ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#scopeOf> (scopeOf)
+
+AnnotationAssertion(rdfs:label as:scopeOf "scopeOf"@en)
+ObjectPropertyDomain(as:scopeOf ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:scopeOf ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#self> (self)
+
+AnnotationAssertion(rdfs:label as:self "self"@en)
+FunctionalObjectProperty(as:self)
+ObjectPropertyDomain(as:self as:Collection)
+ObjectPropertyRange(as:self ObjectUnionOf(as:Collection as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#shape> (shape)
+
+AnnotationAssertion(rdfs:comment as:shape "Describes the data shape of a payload"@en)
+AnnotationAssertion(rdfs:label as:shape "shape"@en)
+ObjectPropertyDomain(as:shape ObjectUnionOf(as:HttpHeader as:Parameter as:Payload as:PossibleAnswer))
+ObjectPropertyRange(as:shape owl:Thing)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#summary> (summary)
+
+AnnotationAssertion(rdfs:comment as:summary "A short summary of the object"@en)
+AnnotationAssertion(rdfs:label as:summary "summary"@en)
+ObjectPropertyDomain(as:summary as:Object)
+ObjectPropertyRange(as:summary ObjectUnionOf(rdf:langString xsd:string))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#tag> (tag)
+
+AnnotationAssertion(rdfs:label as:tag "tag"@en)
+EquivalentObjectProperties(as:tag as:tags)
+InverseObjectProperties(as:tagOf as:tag)
+ObjectPropertyDomain(as:tag as:Object)
+ObjectPropertyRange(as:tag ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#tagOf> (tagOf)
+
+AnnotationAssertion(rdfs:label as:tagOf "tagOf"@en)
+ObjectPropertyDomain(as:tagOf ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:tagOf ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#tags> (tags)
+
+AnnotationAssertion(rdfs:label as:tags "tags"@en)
+AnnotationAssertion(owl:deprecated as:tags "true"^^xsd:boolean)
+ObjectPropertyDomain(as:tags as:Object)
+ObjectPropertyRange(as:tags ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#target> (target)
+
+AnnotationAssertion(rdfs:label as:target "target"@en)
+InverseObjectProperties(as:targetOf as:target)
+ObjectPropertyDomain(as:target as:Activity)
+ObjectPropertyRange(as:target ObjectUnionOf(as:LinkNotHandler as:Object))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#targetOf> (targetOf)
+
+AnnotationAssertion(rdfs:label as:targetOf "targetOf"@en)
+ObjectPropertyDomain(as:targetOf ObjectUnionOf(as:LinkNotHandler as:Object))
+ObjectPropertyRange(as:targetOf as:Activity)
+
+# Object Property: <http://www.w3.org/ns/activitystreams#title> (title)
+
+AnnotationAssertion(rdfs:comment as:title "The title of the object, HTML markup is permitted."@en)
+AnnotationAssertion(rdfs:label as:title "title"@en)
+ObjectPropertyDomain(as:title ObjectUnionOf(as:Link as:Object))
+ObjectPropertyRange(as:title ObjectUnionOf(rdf:langString xsd:string))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#to> (to)
+
+AnnotationAssertion(rdfs:label as:to "to"@en)
+ObjectPropertyDomain(as:to as:Activity)
+ObjectPropertyRange(as:to ObjectUnionOf(as:Actor as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#url> (url)
+
+AnnotationAssertion(rdfs:comment as:url "Specifies a link to a specific representation of the Object"@en)
+AnnotationAssertion(rdfs:label as:url "url"@en)
+ObjectPropertyDomain(as:url as:Object)
+ObjectPropertyRange(as:url ObjectUnionOf(owl:Thing as:LinkNotHandler))
+
+# Object Property: <http://www.w3.org/ns/activitystreams#using> (using)
+
+AnnotationAssertion(rdfs:comment as:using "Describes an ActivityHandler that can be used to carry out an Activity"@en)
+AnnotationAssertion(rdfs:label as:using "using"@en)
+ObjectPropertyDomain(as:using as:Activity)
+ObjectPropertyRange(as:using as:ActivityHandler)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.w3.org/ns/activitystreams#accuracy> (accuracy)
+
+AnnotationAssertion(rdfs:comment as:accuracy "Specifies the accuracy around the point established by the longitude and latitude"@en)
+AnnotationAssertion(rdfs:label as:accuracy "accuracy"@en)
+FunctionalDataProperty(as:accuracy)
+DataPropertyDomain(as:accuracy as:Place)
+DataPropertyRange(as:accuracy DatatypeRestriction(xsd:float xsd:minInclusive "0.0"^^xsd:float))
+
+# Data Property: <http://www.w3.org/ns/activitystreams#alias> (alias)
+
+AnnotationAssertion(rdfs:comment as:alias "An alternative, domain specific alias for an object"@en)
+AnnotationAssertion(rdfs:label as:alias "alias"@en)
+FunctionalDataProperty(as:alias)
+DataPropertyDomain(as:alias as:Object)
+DataPropertyRange(as:alias xsd:anyURI)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#altitude> (altitude)
+
+AnnotationAssertion(rdfs:comment as:altitude "The altitude of a place"@en)
+AnnotationAssertion(rdfs:label as:altitude "altitude"@en)
+FunctionalDataProperty(as:altitude)
+DataPropertyDomain(as:altitude as:Place)
+DataPropertyRange(as:altitude xsd:float)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#browserContext> (browserContext)
+
+AnnotationAssertion(rdfs:comment as:browserContext "Identifies the browser context name for a BrowserView, as defined by HTML5"@en)
+AnnotationAssertion(rdfs:label as:browserContext "browserContext"@en)
+FunctionalDataProperty(as:browserContext)
+DataPropertyDomain(as:browserContext as:BrowserView)
+DataPropertyRange(as:browserContext DataUnionOf(DataOneOf("_blank" "_parent" "_self" "_top") DatatypeRestriction(xsd:string xsd:pattern "[^_|.].*")))
+
+# Data Property: <http://www.w3.org/ns/activitystreams#confirm> (confirm)
+
+AnnotationAssertion(rdfs:comment as:confirm "True if the Action Handler must be confirmed prior to invocation"@en)
+AnnotationAssertion(rdfs:label as:confirm "confirm"@en)
+FunctionalDataProperty(as:confirm)
+DataPropertyDomain(as:confirm as:ActivityHandler)
+DataPropertyRange(as:confirm xsd:boolean)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#downstreamDuplicates> (downstreamDuplicates)
+
+AnnotationAssertion(rdfs:label as:downstreamDuplicates "downstreamDuplicates"@en)
+AnnotationAssertion(owl:deprecated as:downstreamDuplicates "true"^^xsd:boolean)
+DataPropertyDomain(as:downstreamDuplicates as:Object)
+DataPropertyRange(as:downstreamDuplicates xsd:anyURI)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#duration> (duration)
+
+FunctionalDataProperty(as:duration)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#endTime> (endTime)
+
+AnnotationAssertion(rdfs:comment as:endTime "The ending time of the object"@en)
+AnnotationAssertion(rdfs:label as:endTime "endTime"@en)
+SubDataPropertyOf(as:endTime prov:endedAtTime)
+FunctionalDataProperty(as:endTime)
+DataPropertyDomain(as:endTime as:Object)
+DataPropertyRange(as:endTime xsd:dateTime)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#height> (height)
+
+AnnotationAssertion(rdfs:comment as:height "The display height expressed as device independent pixels"@en)
+AnnotationAssertion(rdfs:label as:height "height"@en)
+FunctionalDataProperty(as:height)
+DataPropertyDomain(as:height ObjectUnionOf(as:Content as:Link))
+DataPropertyRange(as:height xsd:nonNegativeInteger)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#href> (href)
+
+AnnotationAssertion(rdfs:comment as:href "The target URI of the Link"@en)
+AnnotationAssertion(rdfs:label as:href "href"@en)
+FunctionalDataProperty(as:href)
+DataPropertyDomain(as:href as:Link)
+DataPropertyRange(as:href xsd:anyURI)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#hreflang> (hreflang)
+
+AnnotationAssertion(rdfs:comment as:hreflang "A hint about the language of the referenced resource"@en)
+AnnotationAssertion(rdfs:label as:hreflang "hreflang"@en)
+FunctionalDataProperty(as:hreflang)
+DataPropertyDomain(as:hreflang as:Link)
+DataPropertyRange(as:hreflang xsd:language)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#id> (id)
+
+AnnotationAssertion(rdfs:label as:id "id"@en)
+AnnotationAssertion(owl:deprecated as:id "true"^^xsd:boolean)
+FunctionalDataProperty(as:id)
+DataPropertyDomain(as:id ObjectUnionOf(as:Link as:Object))
+DataPropertyRange(as:id xsd:anyURI)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#itemsPerPage> (itemsPerPage)
+
+AnnotationAssertion(rdfs:comment as:itemsPerPage "The maximum number of items per page in a logical Collection"@en)
+AnnotationAssertion(rdfs:label as:itemsPerPage "itemsPerPage"@en)
+FunctionalDataProperty(as:itemsPerPage)
+DataPropertyDomain(as:itemsPerPage as:Collection)
+DataPropertyRange(as:itemsPerPage xsd:nonNegativeInteger)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#latitude> (latitude)
+
+AnnotationAssertion(rdfs:comment as:latitude "The latitude"@en)
+AnnotationAssertion(rdfs:label as:latitude "latitude"@en)
+FunctionalDataProperty(as:latitude)
+DataPropertyDomain(as:latitude as:Place)
+DataPropertyRange(as:latitude xsd:float)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#longitude> (longitude)
+
+AnnotationAssertion(rdfs:comment as:longitude "The longitude"@en)
+AnnotationAssertion(rdfs:label as:longitude "longitude"@en)
+FunctionalDataProperty(as:longitude)
+DataPropertyDomain(as:longitude as:Place)
+DataPropertyRange(as:longitude xsd:float)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#mediaType> (mediaType)
+
+AnnotationAssertion(rdfs:comment as:mediaType "The MIME Media Type"@en)
+AnnotationAssertion(rdfs:label as:mediaType "mediaType"@en)
+FunctionalDataProperty(as:mediaType)
+DataPropertyDomain(as:mediaType ObjectUnionOf(as:EmbeddedView as:Link as:Payload))
+DataPropertyRange(as:mediaType xsd:string)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#method> (method)
+
+AnnotationAssertion(rdfs:comment as:method "The HTTP Method to use"@en)
+AnnotationAssertion(rdfs:label as:method "method"@en)
+FunctionalDataProperty(as:method)
+DataPropertyDomain(as:method ObjectUnionOf(as:BrowserView as:HttpRequest))
+DataPropertyRange(as:method xsd:token)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#name> (name)
+
+AnnotationAssertion(rdfs:comment as:name "The name of a Parameter or HttpHeader"@en)
+AnnotationAssertion(rdfs:label as:name "name"@en)
+FunctionalDataProperty(as:name)
+DataPropertyDomain(as:name ObjectUnionOf(as:HttpHeader as:Parameter))
+DataPropertyRange(as:name xsd:string)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#objectType> (objectType)
+
+AnnotationAssertion(rdfs:label as:objectType "objectType"@en)
+AnnotationAssertion(owl:deprecated as:objectType "true"^^xsd:boolean)
+FunctionalDataProperty(as:objectType)
+DataPropertyDomain(as:objectType as:Object)
+DataPropertyRange(as:objectType xsd:anyURI)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#optional> (optional)
+
+AnnotationAssertion(rdfs:comment as:optional "Indicates if the parameter is optional. By default, all parameters are considered to be required."@en)
+AnnotationAssertion(rdfs:label as:optional "optional"@en)
+FunctionalDataProperty(as:optional)
+DataPropertyDomain(as:optional as:Parameter)
+DataPropertyRange(as:optional xsd:boolean)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#priority> (priority)
+
+AnnotationAssertion(rdfs:comment as:priority "Specifies the relative priority of the Activity"@en)
+AnnotationAssertion(rdfs:label as:priority "priority"@en)
+FunctionalDataProperty(as:priority)
+DataPropertyDomain(as:priority as:Activity)
+DataPropertyRange(as:priority DatatypeRestriction(xsd:float xsd:minInclusive "0.0"^^xsd:float xsd:maxInclusive "1.0"^^xsd:float))
+
+# Data Property: <http://www.w3.org/ns/activitystreams#published> (published)
+
+AnnotationAssertion(rdfs:comment as:published "Specifies the date and time the object was published"@en)
+AnnotationAssertion(rdfs:label as:published "published"@en)
+SubDataPropertyOf(as:published prov:generatedAtTime)
+FunctionalDataProperty(as:published)
+DataPropertyDomain(as:published as:Object)
+DataPropertyRange(as:published xsd:dateTime)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#radius> (radius)
+
+AnnotationAssertion(rdfs:comment as:radius "Specifies a radius around the point established by the longitude and latitude"@en)
+AnnotationAssertion(rdfs:label as:radius "radius"@en)
+FunctionalDataProperty(as:radius)
+DataPropertyDomain(as:radius as:Place)
+DataPropertyRange(as:radius DatatypeRestriction(xsd:float xsd:minInclusive "0.0"^^xsd:float))
+
+# Data Property: <http://www.w3.org/ns/activitystreams#rating> (rating)
+
+AnnotationAssertion(rdfs:comment as:rating "A numeric rating (>= 0.0, <= 5.0) for the object"@en)
+AnnotationAssertion(rdfs:label as:rating "rating"@en)
+FunctionalDataProperty(as:rating)
+DataPropertyDomain(as:rating as:Object)
+DataPropertyRange(as:rating DatatypeRestriction(xsd:float xsd:minInclusive "0.0"^^xsd:float xsd:maxInclusive "5.0"^^xsd:float))
+
+# Data Property: <http://www.w3.org/ns/activitystreams#rel> (rel)
+
+AnnotationAssertion(rdfs:comment as:rel "The RFC 5988 or HTML5 Link Relation associated with the Link"@en)
+AnnotationAssertion(rdfs:label as:rel "rel"@en)
+DataPropertyDomain(as:rel as:Link)
+DataPropertyRange(as:rel xsd:string)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#sandbox> (sandbox)
+
+AnnotationAssertion(rdfs:comment as:sandbox "Browser sandbox policy for EmbeddedView and BrowserView"@en)
+AnnotationAssertion(rdfs:label as:sandbox "sandbox"@en)
+FunctionalDataProperty(as:sandbox)
+DataPropertyDomain(as:sandbox ObjectUnionOf(as:BrowserView as:EmbeddedView))
+DataPropertyRange(as:sandbox xsd:string)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#startIndex> (startIndex)
+
+AnnotationAssertion(rdfs:comment as:startIndex "In a strictly ordered logical collection, specifies the index position of the first item in the items list"@en)
+AnnotationAssertion(rdfs:label as:startIndex "startIndex"@en)
+FunctionalDataProperty(as:startIndex)
+DataPropertyDomain(as:startIndex as:OrderedCollection)
+DataPropertyRange(as:startIndex xsd:nonNegativeInteger)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#startTime> (startTime)
+
+AnnotationAssertion(rdfs:comment as:startTime "The starting time of the object"@en)
+AnnotationAssertion(rdfs:label as:startTime "startTime"@en)
+SubDataPropertyOf(as:startTime prov:startedAtTime)
+FunctionalDataProperty(as:startTime)
+DataPropertyDomain(as:startTime as:Object)
+DataPropertyRange(as:startTime xsd:dateTime)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#status> (status)
+
+AnnotationAssertion(rdfs:comment as:status "Explicitly identifies the current state of an Activity."@en)
+AnnotationAssertion(rdfs:label as:status "status"@en)
+FunctionalDataProperty(as:status)
+DataPropertyDomain(as:status as:Activity)
+DataPropertyRange(as:status DataUnionOf(xsd:anyURI DataOneOf("active" "canceled" "completed" "pending" "voided")))
+
+# Data Property: <http://www.w3.org/ns/activitystreams#template> (template)
+
+AnnotationAssertion(rdfs:comment as:template "A URL Template as defined in RFC 6570"@en)
+AnnotationAssertion(rdfs:label as:template "template"@en)
+FunctionalDataProperty(as:template)
+DataPropertyDomain(as:template as:UrlTemplate)
+DataPropertyRange(as:template xsd:string)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#totalItems> (totalItems)
+
+AnnotationAssertion(rdfs:comment as:totalItems "The total number of items in a logical collection"@en)
+AnnotationAssertion(rdfs:label as:totalItems "totalItems"@en)
+FunctionalDataProperty(as:totalItems)
+DataPropertyDomain(as:totalItems as:Collection)
+DataPropertyRange(as:totalItems xsd:nonNegativeInteger)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#units> (units)
+
+AnnotationAssertion(rdfs:comment as:units "Identifies the unit of measurement used by the radius, altitude and accuracy properties. The value can be expressed either as one of a set of predefined units or as a well-known common URI that identifies units."@en)
+AnnotationAssertion(rdfs:label as:units "units"@en)
+FunctionalDataProperty(as:units)
+DataPropertyDomain(as:units as:Place)
+DataPropertyRange(as:units DataUnionOf(xsd:anyURI DataOneOf("cm" "feet" "inches" "km" "m" "miles")))
+
+# Data Property: <http://www.w3.org/ns/activitystreams#updated> (updated)
+
+AnnotationAssertion(rdfs:comment as:updated "Specifies when the object was last updated"@en)
+AnnotationAssertion(rdfs:label as:updated "updated"@en)
+FunctionalDataProperty(as:updated)
+DataPropertyDomain(as:updated as:Object)
+DataPropertyRange(as:updated xsd:dateTime)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#upstreamDuplicates> (upstreamDuplicates)
+
+AnnotationAssertion(rdfs:label as:upstreamDuplicates "upstreamDuplicates"@en)
+AnnotationAssertion(owl:deprecated as:upstreamDuplicates "true"^^xsd:boolean)
+DataPropertyDomain(as:upstreamDuplicates as:Object)
+DataPropertyRange(as:upstreamDuplicates xsd:anyURI)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#verb> (verb)
+
+AnnotationAssertion(rdfs:label as:verb "verb"@en)
+AnnotationAssertion(owl:deprecated as:verb "true"^^xsd:boolean)
+FunctionalDataProperty(as:verb)
+DataPropertyDomain(as:verb as:Activity)
+DataPropertyRange(as:verb xsd:anyURI)
+
+# Data Property: <http://www.w3.org/ns/activitystreams#width> (width)
+
+AnnotationAssertion(rdfs:comment as:width "Specifies the preferred display width of the content, expressed in terms of device independent pixels."@en)
+AnnotationAssertion(rdfs:label as:width "width"@en)
+FunctionalDataProperty(as:width)
+DataPropertyDomain(as:width ObjectUnionOf(as:Content as:Link))
+DataPropertyRange(as:width xsd:nonNegativeInteger)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.w3.org/ns/activitystreams#Accept> (Accept)
+
+AnnotationAssertion(rdfs:comment as:Accept "Actor accepts the Object"@en)
+AnnotationAssertion(rdfs:label as:Accept "Accept"@en)
+EquivalentClasses(as:Accept prov:Accept)
+SubClassOf(as:Accept as:Respond)
+
+# Class: <http://www.w3.org/ns/activitystreams#Achieve> (Achieve)
+
+AnnotationAssertion(rdfs:comment as:Achieve "The actor achieves the object"@en)
+AnnotationAssertion(rdfs:label as:Achieve "Achieve"@en)
+SubClassOf(as:Achieve as:Object)
+
+# Class: <http://www.w3.org/ns/activitystreams#Activity> (Activity)
+
+AnnotationAssertion(rdfs:comment as:Activity "An Object representing some form of Action that has been taken"@en)
+AnnotationAssertion(rdfs:label as:Activity "Activity"@en)
+EquivalentClasses(as:Activity prov:Activity)
+SubClassOf(as:Activity as:Object)
+SubClassOf(as:Activity prov:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#ActivityHandler> (ActivityHandler)
+
+AnnotationAssertion(rdfs:comment as:ActivityHandler "Describes a way of carrying out an Activity"@en)
+AnnotationAssertion(rdfs:label as:ActivityHandler "ActivityHandler"@en)
+
+# Class: <http://www.w3.org/ns/activitystreams#Actor> (Actor)
+
+AnnotationAssertion(rdfs:comment as:Actor "Any entity that can do something"@en)
+AnnotationAssertion(rdfs:label as:Actor "Actor"@en)
+EquivalentClasses(as:Actor prov:Agent)
+SubClassOf(as:Actor as:Object)
+SubClassOf(as:Actor prov:Agent)
+
+# Class: <http://www.w3.org/ns/activitystreams#Add> (Add)
+
+AnnotationAssertion(rdfs:comment as:Add "To Add an Object or Link to Something"@en)
+AnnotationAssertion(rdfs:label as:Add "Add"@en)
+SubClassOf(as:Add as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Album> (Album)
+
+AnnotationAssertion(rdfs:comment as:Album "An Album.. typically a collection of photos"@en)
+AnnotationAssertion(rdfs:label as:Album "Album"@en)
+SubClassOf(as:Album as:Collection)
+
+# Class: <http://www.w3.org/ns/activitystreams#Announce> (Announce)
+
+AnnotationAssertion(rdfs:comment as:Announce "Actor announces the object to the target"@en)
+AnnotationAssertion(rdfs:label as:Announce "Announce"@en)
+SubClassOf(as:Announce as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Application> (Application)
+
+AnnotationAssertion(rdfs:comment as:Application "Represents a software application of any sort"@en)
+AnnotationAssertion(rdfs:label as:Application "Application"@en)
+EquivalentClasses(as:Application prov:SoftwareAgent)
+SubClassOf(as:Application as:Actor)
+SubClassOf(as:Application prov:SoftwareAgent)
+
+# Class: <http://www.w3.org/ns/activitystreams#Arrive> (Arrive)
+
+AnnotationAssertion(rdfs:comment as:Arrive "To Arrive Somewhere (can be used, for instance, to indicate that a particular entity is currently located somewhere, e.g. a \"check-in\")"@en)
+AnnotationAssertion(rdfs:label as:Arrive "Arrive"@en)
+SubClassOf(as:Arrive as:IntransitiveActivity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Article> (Article)
+
+AnnotationAssertion(rdfs:comment as:Article "A written work. Typically several paragraphs long. For example, a blog post or a news article."@en)
+AnnotationAssertion(rdfs:label as:Article "Article"@en)
+SubClassOf(as:Article as:Content)
+
+# Class: <http://www.w3.org/ns/activitystreams#Assign> (Assign)
+
+AnnotationAssertion(rdfs:comment as:Assign "The actor is assigning the object to the target"@en)
+AnnotationAssertion(rdfs:label as:Assign "Assign"@en)
+SubClassOf(as:Assign as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Audio> (Audio)
+
+AnnotationAssertion(rdfs:comment as:Audio "An audio file"@en)
+AnnotationAssertion(rdfs:label as:Audio "Audio"@en)
+SubClassOf(as:Audio as:Document)
+
+# Class: <http://www.w3.org/ns/activitystreams#Block> (Block)
+
+AnnotationAssertion(rdfs:label as:Block "Block"@en)
+SubClassOf(as:Block as:Ignore)
+
+# Class: <http://www.w3.org/ns/activitystreams#BrowserView> (BrowserView)
+
+AnnotationAssertion(rdfs:comment as:BrowserView "Describes how to carry out an Activity using a Browser View"@en)
+AnnotationAssertion(rdfs:label as:BrowserView "BrowserView"@en)
+SubClassOf(as:BrowserView as:ActivityHandler)
+SubClassOf(as:BrowserView as:Link)
+
+# Class: <http://www.w3.org/ns/activitystreams#Collection> (Collection)
+
+AnnotationAssertion(rdfs:comment as:Collection "An ordered or unordered collection of Objects or Links"@en)
+AnnotationAssertion(rdfs:label as:Collection "Collection"@en)
+EquivalentClasses(as:Collection prov:Collection)
+SubClassOf(as:Collection as:Object)
+SubClassOf(as:Collection prov:Collection)
+
+# Class: <http://www.w3.org/ns/activitystreams#Complete> (Complete)
+
+AnnotationAssertion(rdfs:comment as:Complete "The actor has completed the object"@en)
+AnnotationAssertion(rdfs:label as:Complete "Complete"@en)
+SubClassOf(as:Complete as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Confirm> (Confirm)
+
+AnnotationAssertion(rdfs:comment as:Confirm "The actor is confirming the object"@en)
+AnnotationAssertion(rdfs:label as:Confirm "Confirm"@en)
+SubClassOf(as:Confirm as:Respond)
+
+# Class: <http://www.w3.org/ns/activitystreams#Connect> (Connect)
+
+AnnotationAssertion(rdfs:comment as:Connect "The Actor is wishing to establish a connection with the Object. For instance, when one person is requesting to be added to another persons friends list."@en)
+AnnotationAssertion(rdfs:label as:Connect "Connect"@en)
+SubClassOf(as:Connect as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Content> (Content)
+
+AnnotationAssertion(rdfs:comment as:Content "An Object that has content"@en)
+AnnotationAssertion(rdfs:label as:Content "Content"@en)
+SubClassOf(as:Content as:Object)
+
+# Class: <http://www.w3.org/ns/activitystreams#Create> (Create)
+
+AnnotationAssertion(rdfs:comment as:Create "To Create Something"@en)
+AnnotationAssertion(rdfs:label as:Create "Create"@en)
+EquivalentClasses(as:Create as:Post)
+EquivalentClasses(as:Create prov:Create)
+SubClassOf(as:Create as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Delete> (Delete)
+
+AnnotationAssertion(rdfs:comment as:Delete "To Delete Something"@en)
+AnnotationAssertion(rdfs:label as:Delete "Delete"@en)
+SubClassOf(as:Delete as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Device> (Device)
+
+AnnotationAssertion(rdfs:comment as:Device "Represents a physical hardware devices of any sort"@en)
+AnnotationAssertion(rdfs:label as:Device "Device"@en)
+SubClassOf(as:Device as:Actor)
+
+# Class: <http://www.w3.org/ns/activitystreams#Dislike> (Dislike)
+
+AnnotationAssertion(rdfs:comment as:Dislike "The actor dislikes the object"@en)
+AnnotationAssertion(rdfs:label as:Dislike "Dislike"@en)
+SubClassOf(as:Dislike as:Respond)
+
+# Class: <http://www.w3.org/ns/activitystreams#Document> (Document)
+
+AnnotationAssertion(rdfs:comment as:Document "Represents a digital document/file of any sort"@en)
+AnnotationAssertion(rdfs:label as:Document "Document"@en)
+SubClassOf(as:Document as:Content)
+
+# Class: <http://www.w3.org/ns/activitystreams#EmbeddedView> (EmbeddedView)
+
+AnnotationAssertion(rdfs:comment as:EmbeddedView "Describes how to carry out an Activity using embedded content"@en)
+AnnotationAssertion(rdfs:label as:EmbeddedView "EmbeddedView"@en)
+SubClassOf(as:EmbeddedView as:ActivityHandler)
+SubClassOf(as:EmbeddedView as:Content)
+
+# Class: <http://www.w3.org/ns/activitystreams#Event> (Event)
+
+AnnotationAssertion(rdfs:comment as:Event "An Event of any kind"@en)
+AnnotationAssertion(rdfs:label as:Event "Event"@en)
+SubClassOf(as:Event as:Object)
+
+# Class: <http://www.w3.org/ns/activitystreams#Experience> (Experience)
+
+AnnotationAssertion(rdfs:comment as:Experience "The actor experienced the object"@en)
+AnnotationAssertion(rdfs:label as:Experience "Experience"@en)
+SubClassOf(as:Experience as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Favorite> (Favorite)
+
+AnnotationAssertion(rdfs:comment as:Favorite "To Favorite/Like Something"@en)
+AnnotationAssertion(rdfs:label as:Favorite "Favorite"@en)
+EquivalentClasses(as:Favorite as:Like)
+SubClassOf(as:Favorite as:Respond)
+
+# Class: <http://www.w3.org/ns/activitystreams#Flag> (Flag)
+
+AnnotationAssertion(rdfs:comment as:Flag "To flag something (e.g. flag as inappropriate, flag as spam, etc)"@en)
+AnnotationAssertion(rdfs:label as:Flag "Flag"@en)
+SubClassOf(as:Flag as:Respond)
+
+# Class: <http://www.w3.org/ns/activitystreams#Folder> (Folder)
+
+AnnotationAssertion(rdfs:comment as:Folder "Typically, a collection of files"@en)
+AnnotationAssertion(rdfs:label as:Folder "Folder"@en)
+SubClassOf(as:Folder as:Collection)
+
+# Class: <http://www.w3.org/ns/activitystreams#Follow> (Follow)
+
+AnnotationAssertion(rdfs:comment as:Follow "To Express Interest in Something"@en)
+AnnotationAssertion(rdfs:label as:Follow "Follow"@en)
+SubClassOf(as:Follow as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#FriendRequest> (FriendRequest)
+
+AnnotationAssertion(rdfs:comment as:FriendRequest "A Friend Request"@en)
+AnnotationAssertion(rdfs:label as:FriendRequest "FriendRequest"@en)
+SubClassOf(as:FriendRequest as:Connect)
+
+# Class: <http://www.w3.org/ns/activitystreams#Give> (Give)
+
+AnnotationAssertion(rdfs:comment as:Give "To Give Something to Some recipient"@en)
+AnnotationAssertion(rdfs:label as:Give "Give"@en)
+SubClassOf(as:Give as:Offer)
+
+# Class: <http://www.w3.org/ns/activitystreams#Group> (Group)
+
+AnnotationAssertion(rdfs:comment as:Group "A Group of any kind. Unlike an Organization, Group's may be informal in nature"@en)
+AnnotationAssertion(rdfs:label as:Group "Group"@en)
+SubClassOf(as:Group as:Actor)
+
+# Class: <http://www.w3.org/ns/activitystreams#HtmlForm> (HtmlForm)
+
+AnnotationAssertion(rdfs:comment as:HtmlForm "Describes an HTML Form. This is intended primary to be used as the value of \"shape\" on a Payload when the Payload is expected to be an HTML Form. The Payload's mediaType property specifies whether it's form encoded or url encoded."@en)
+AnnotationAssertion(rdfs:label as:HtmlForm "HtmlForm"@en)
+
+# Class: <http://www.w3.org/ns/activitystreams#HttpHeader> (HttpHeader)
+
+AnnotationAssertion(rdfs:comment as:HttpHeader "Describes an HTTP Header. This is primarily intended for use as a \"Potential Input\" for an ActivityHandler, particularly the HttpRequest and BrowserView. It can also be used as a \"Potential Result\"."@en)
+AnnotationAssertion(rdfs:label as:HttpHeader "HttpHeader"@en)
+
+# Class: <http://www.w3.org/ns/activitystreams#HttpRequest> (HttpRequest)
+
+AnnotationAssertion(rdfs:comment as:HttpRequest "Describes how to carry out an Activity using an HttpRequest"@en)
+AnnotationAssertion(rdfs:label as:HttpRequest "HttpRequest"@en)
+SubClassOf(as:HttpRequest as:ActivityHandler)
+SubClassOf(as:HttpRequest as:Link)
+
+# Class: <http://www.w3.org/ns/activitystreams#Ignore> (Ignore)
+
+AnnotationAssertion(rdfs:comment as:Ignore "Actor is ignoring the Object"@en)
+AnnotationAssertion(rdfs:label as:Ignore "Ignore"@en)
+SubClassOf(as:Ignore as:Respond)
+
+# Class: <http://www.w3.org/ns/activitystreams#Image> (Image)
+
+AnnotationAssertion(rdfs:comment as:Image "An Image file"@en)
+AnnotationAssertion(rdfs:label as:Image "Image"@en)
+SubClassOf(as:Image as:Document)
+
+# Class: <http://www.w3.org/ns/activitystreams#IntransitiveActivity> (IntransitiveActivity)
+
+AnnotationAssertion(rdfs:comment as:IntransitiveActivity "An Activity that has no direct object"@en)
+AnnotationAssertion(rdfs:label as:IntransitiveActivity "IntransitiveActivity"@en)
+SubClassOf(as:IntransitiveActivity as:Activity)
+SubClassOf(as:IntransitiveActivity ObjectMaxCardinality(0 as:object))
+
+# Class: <http://www.w3.org/ns/activitystreams#Invite> (Invite)
+
+AnnotationAssertion(rdfs:comment as:Invite "To invite someone or something to something"@en)
+AnnotationAssertion(rdfs:label as:Invite "Invite"@en)
+SubClassOf(as:Invite as:Offer)
+
+# Class: <http://www.w3.org/ns/activitystreams#Join> (Join)
+
+AnnotationAssertion(rdfs:comment as:Join "To Join Something"@en)
+AnnotationAssertion(rdfs:label as:Join "Join"@en)
+SubClassOf(as:Join as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Leave> (Leave)
+
+AnnotationAssertion(rdfs:comment as:Leave "To Leave Something"@en)
+AnnotationAssertion(rdfs:label as:Leave "Leave"@en)
+SubClassOf(as:Leave as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Like> (Like)
+
+AnnotationAssertion(rdfs:comment as:Like "To Like/Favorite Something"@en)
+AnnotationAssertion(rdfs:label as:Like "Like"@en)
+SubClassOf(as:Like as:Respond)
+
+# Class: <http://www.w3.org/ns/activitystreams#Link> (Link)
+
+AnnotationAssertion(rdfs:comment as:Link "Represents a qualified reference to another resource. Patterned after the RFC5988 Web Linking Model"@en)
+AnnotationAssertion(rdfs:label as:Link "Link"@en)
+DisjointClasses(as:Link as:Object)
+
+# Class: <http://www.w3.org/ns/activitystreams#LinkNotHandler> (Links that are Not Handlers)
+
+AnnotationAssertion(rdfs:comment as:LinkNotHandler "Represents instances of as:Link that are not also as:ActivityHandler"@en)
+AnnotationAssertion(rdfs:label as:LinkNotHandler "Links that are Not Handlers"@en)
+SubClassOf(as:LinkNotHandler as:Link)
+SubClassOf(as:LinkNotHandler ObjectComplementOf(as:ActivityHandler))
+
+# Class: <http://www.w3.org/ns/activitystreams#Listen> (Listen)
+
+AnnotationAssertion(rdfs:comment as:Listen "The actor listened to the object"@en)
+AnnotationAssertion(rdfs:label as:Listen "Listen"@en)
+SubClassOf(as:Listen as:Experience)
+
+# Class: <http://www.w3.org/ns/activitystreams#Mention> (Mention)
+
+AnnotationAssertion(rdfs:comment as:Mention "A specialized Link that represents an @mention"@en)
+AnnotationAssertion(rdfs:label as:Mention "Mention"@en)
+SubClassOf(as:Mention as:Link)
+
+# Class: <http://www.w3.org/ns/activitystreams#Move> (Move)
+
+AnnotationAssertion(rdfs:comment as:Move "The actor is moving the object. The target specifies where the object is moving to. The origin specifies where the object is moving from.")
+AnnotationAssertion(rdfs:label as:Move "Move"@en)
+SubClassOf(as:Move as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Note> (Note)
+
+AnnotationAssertion(rdfs:comment as:Note "A Short note, typically less than a single paragraph. A \"tweet\" is an example, or a \"status update\""@en)
+AnnotationAssertion(rdfs:label as:Note "Note"@en)
+SubClassOf(as:Note as:Content)
+
+# Class: <http://www.w3.org/ns/activitystreams#Object> (Object)
+
+AnnotationAssertion(rdfs:label as:Object "Object"@en)
+EquivalentClasses(as:Object prov:Entity)
+SubClassOf(as:Object prov:Entity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Offer> (Offer)
+
+AnnotationAssertion(rdfs:comment as:Offer "To Offer something to someone or something"@en)
+AnnotationAssertion(rdfs:label as:Offer "Offer"@en)
+SubClassOf(as:Offer as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#OrderedCollection> (OrderedCollection)
+
+AnnotationAssertion(rdfs:comment as:OrderedCollection "A variation of Collection in which items are strictly ordered"@en)
+AnnotationAssertion(rdfs:label as:OrderedCollection "OrderedCollection"@en)
+SubClassOf(as:OrderedCollection ObjectIntersectionOf(as:Collection ObjectAllValuesFrom(as:items ObjectIntersectionOf(as:OrderedItems ObjectComplementOf(ObjectUnionOf(as:LinkNotHandler as:Object))))))
+
+# Class: <http://www.w3.org/ns/activitystreams#OrderedItems> (OrderedItems)
+
+AnnotationAssertion(rdfs:comment as:OrderedItems "A rdf:List variant for Objects and Links"@en)
+AnnotationAssertion(rdfs:label as:OrderedItems "OrderedItems"@en)
+SubClassOf(as:OrderedItems ObjectIntersectionOf(rdf:List ObjectAllValuesFrom(rdf:first ObjectUnionOf(as:LinkNotHandler as:Object)) ObjectAllValuesFrom(rdf:rest as:OrderedItems)))
+
+# Class: <http://www.w3.org/ns/activitystreams#Organization> (Organization)
+
+AnnotationAssertion(rdfs:comment as:Organization "A formal organization of any type"@en)
+AnnotationAssertion(rdfs:label as:Organization "Organization"@en)
+EquivalentClasses(as:Organization prov:Organization)
+SubClassOf(as:Organization as:Actor)
+SubClassOf(as:Organization prov:Organization)
+
+# Class: <http://www.w3.org/ns/activitystreams#Page> (Page)
+
+AnnotationAssertion(rdfs:comment as:Page "A Web Page"@en)
+AnnotationAssertion(rdfs:label as:Page "Page"@en)
+SubClassOf(as:Page as:Content)
+
+# Class: <http://www.w3.org/ns/activitystreams#Parameter> (Parameter)
+
+AnnotationAssertion(rdfs:comment as:Parameter "Represents a variable parameter, used typically with UrlTemplate and HtmlForm objects"@en)
+AnnotationAssertion(rdfs:label as:Parameter "Parameter"@en)
+
+# Class: <http://www.w3.org/ns/activitystreams#Payload> (Payload)
+
+AnnotationAssertion(rdfs:comment as:Payload "Describes a data payload of any type, typically used to describe the input or output of an HttpRequest or BrowserView ActivityHandler. The mediaType property describes the MIME media type while the shape property describes the shape of the actual content"@en)
+AnnotationAssertion(rdfs:label as:Payload "Payload"@en)
+
+# Class: <http://www.w3.org/ns/activitystreams#Person> (Person)
+
+AnnotationAssertion(rdfs:comment as:Person "A Person"@en)
+AnnotationAssertion(rdfs:label as:Person "Person"@en)
+EquivalentClasses(as:Person prov:Person)
+SubClassOf(as:Person as:Actor)
+SubClassOf(as:Person prov:Person)
+
+# Class: <http://www.w3.org/ns/activitystreams#Place> (Place)
+
+AnnotationAssertion(rdfs:comment as:Place "A physical or logical location"@en)
+AnnotationAssertion(rdfs:label as:Place "Place"@en)
+EquivalentClasses(as:Place prov:Location)
+SubClassOf(as:Place as:Object)
+SubClassOf(as:Place prov:Location)
+
+# Class: <http://www.w3.org/ns/activitystreams#PossibleAnswer> (PossibleAnswer)
+
+AnnotationAssertion(rdfs:comment as:PossibleAnswer "The as:PossibleAnswer is an as:Object that describes one possible answer to an as:Question. While the properties of the as:PossibleAnswer describe the PossibleAnswer itself, the shape property describes what form the actual answer to the question must take."@en)
+AnnotationAssertion(rdfs:label as:PossibleAnswer "PossibleAnswer"@en)
+SubClassOf(as:PossibleAnswer as:Content)
+
+# Class: <http://www.w3.org/ns/activitystreams#Post> (Post)
+
+AnnotationAssertion(rdfs:comment as:Post "To Post/Create Something"@en)
+AnnotationAssertion(rdfs:label as:Post "Post"@en)
+EquivalentClasses(as:Post prov:Publish)
+SubClassOf(as:Post as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Process> (Process)
+
+AnnotationAssertion(rdfs:comment as:Process "Any form of short or long running process"@en)
+AnnotationAssertion(rdfs:label as:Process "Process"@en)
+SubClassOf(as:Process as:Actor)
+
+# Class: <http://www.w3.org/ns/activitystreams#Question> (Question)
+
+AnnotationAssertion(rdfs:comment as:Question "A question of any sort."@en)
+AnnotationAssertion(rdfs:label as:Question "Question"@en)
+SubClassOf(as:Question as:Content)
+SubClassOf(as:Question as:IntransitiveActivity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Read> (Read)
+
+AnnotationAssertion(rdfs:comment as:Read "The actor read the object"@en)
+AnnotationAssertion(rdfs:label as:Read "Read"@en)
+SubClassOf(as:Read as:View)
+
+# Class: <http://www.w3.org/ns/activitystreams#Reject> (Reject)
+
+AnnotationAssertion(rdfs:comment as:Reject "Actor rejects the Object"@en)
+AnnotationAssertion(rdfs:label as:Reject "Reject"@en)
+SubClassOf(as:Reject as:Respond)
+
+# Class: <http://www.w3.org/ns/activitystreams#Remove> (Remove)
+
+AnnotationAssertion(rdfs:comment as:Remove "To Remove Something"@en)
+AnnotationAssertion(rdfs:label as:Remove "Remove"@en)
+SubClassOf(as:Remove as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Reservation> (Reservation)
+
+AnnotationAssertion(rdfs:comment as:Reservation "The actor is creating a reservation for the object"@en)
+AnnotationAssertion(rdfs:label as:Reservation "Reservation"@en)
+SubClassOf(as:Reservation as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Respond> (Respond)
+
+AnnotationAssertion(rdfs:comment as:Respond "The actor responded to the object"@en)
+AnnotationAssertion(rdfs:label as:Respond "Respond"@en)
+SubClassOf(as:Respond as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Review> (Review)
+
+AnnotationAssertion(rdfs:comment as:Review "To Review/Rate Something"@en)
+AnnotationAssertion(rdfs:label as:Review "Review"@en)
+SubClassOf(as:Review as:Respond)
+
+# Class: <http://www.w3.org/ns/activitystreams#Role> (Role)
+
+AnnotationAssertion(rdfs:comment as:Role "A Role that can be assumed by a person, group, application, service, process, team or organization"@en)
+AnnotationAssertion(rdfs:label as:Role "Role"@en)
+EquivalentClasses(as:Role prov:Role)
+SubClassOf(as:Role as:Actor)
+SubClassOf(as:Role prov:Role)
+
+# Class: <http://www.w3.org/ns/activitystreams#Save> (Save)
+
+AnnotationAssertion(rdfs:comment as:Save "To Save Something for later"@en)
+AnnotationAssertion(rdfs:label as:Save "Save"@en)
+SubClassOf(as:Save as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Service> (Service)
+
+AnnotationAssertion(rdfs:comment as:Service "A service provided by some entity"@en)
+AnnotationAssertion(rdfs:label as:Service "Service"@en)
+SubClassOf(as:Service as:Actor)
+
+# Class: <http://www.w3.org/ns/activitystreams#Share> (Share)
+
+AnnotationAssertion(rdfs:comment as:Share "To Share Something with Someone"@en)
+AnnotationAssertion(rdfs:label as:Share "Share"@en)
+SubClassOf(as:Share as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Story> (Story)
+
+AnnotationAssertion(rdfs:comment as:Story "An ordered collection of content sharing a common purpose or characteristic"@en)
+AnnotationAssertion(rdfs:label as:Story "Story"@en)
+SubClassOf(as:Story as:OrderedCollection)
+
+# Class: <http://www.w3.org/ns/activitystreams#Tag> (Tag)
+
+AnnotationAssertion(rdfs:comment as:Tag "A specialized Link tha represents a hashtag"@en)
+AnnotationAssertion(rdfs:label as:Tag "Tag"@en)
+SubClassOf(as:Tag as:Link)
+
+# Class: <http://www.w3.org/ns/activitystreams#TentativeAccept> (TentativeAccept)
+
+AnnotationAssertion(rdfs:comment as:TentativeAccept "Actor tentatively accepts the Object"@en)
+AnnotationAssertion(rdfs:label as:TentativeAccept "TentativeAccept"@en)
+SubClassOf(as:TentativeAccept as:Accept)
+
+# Class: <http://www.w3.org/ns/activitystreams#TentativeReject> (TentativeReject)
+
+AnnotationAssertion(rdfs:comment as:TentativeReject "Actor tentatively rejects the object"@en)
+AnnotationAssertion(rdfs:label as:TentativeReject "TentativeReject"@en)
+SubClassOf(as:TentativeReject as:Reject)
+
+# Class: <http://www.w3.org/ns/activitystreams#Travel> (Travel)
+
+AnnotationAssertion(rdfs:comment as:Travel "The actor is traveling to the target. The origin specifies where the actor is traveling from.")
+AnnotationAssertion(rdfs:label as:Travel "Travel"@en)
+SubClassOf(as:Travel as:IntransitiveActivity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Undo> (Undo)
+
+AnnotationAssertion(rdfs:comment as:Undo "To Undo Something. This would typically be used to indicate that a previous Activity has been undone."@en)
+AnnotationAssertion(rdfs:label as:Undo "Undo"@en)
+SubClassOf(as:Undo as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#Update> (Update)
+
+AnnotationAssertion(rdfs:comment as:Update "To Update/Modify Something"@en)
+AnnotationAssertion(rdfs:label as:Update "Update"@en)
+EquivalentClasses(as:Update prov:Modify)
+SubClassOf(as:Update as:Activity)
+
+# Class: <http://www.w3.org/ns/activitystreams#UrlTemplate> (UrlTemplate)
+
+AnnotationAssertion(rdfs:comment as:UrlTemplate "Describes a URL Template as defined by RFC 6570"@en)
+AnnotationAssertion(rdfs:label as:UrlTemplate "UrlTemplate"@en)
+
+# Class: <http://www.w3.org/ns/activitystreams#Video> (Video)
+
+AnnotationAssertion(rdfs:comment as:Video "A Video document of any kind."@en)
+AnnotationAssertion(rdfs:label as:Video "Video"@en)
+SubClassOf(as:Video as:Document)
+
+# Class: <http://www.w3.org/ns/activitystreams#View> (View)
+
+AnnotationAssertion(rdfs:comment as:View "The actor viewed the object"@en)
+AnnotationAssertion(rdfs:label as:View "View"@en)
+SubClassOf(as:View as:Experience)
+
+# Class: <http://www.w3.org/ns/activitystreams#Watch> (Watch)
+
+AnnotationAssertion(rdfs:comment as:Watch "The actor watched the object"@en)
+AnnotationAssertion(rdfs:label as:Watch "Watch"@en)
+SubClassOf(as:Watch as:View)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: rdf:nil (rdf:nil)
+
+ClassAssertion(as:OrderedItems rdf:nil)
+
+
+)
