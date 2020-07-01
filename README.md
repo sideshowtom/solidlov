@@ -1,4 +1,5 @@
-# Solid Linked Open Vocabularies: SolidLoV    <img src="logo.png" width="100">
+<img src="logo.png" width="100">
+# Solid Linked Open Vocabularies: SolidLoV
 
 This project was created to facilitate and explore the use of [Linked Open Vocabularies](https://lov.linkeddata.es/dataset/lov) with [Solid Pods](https://solidproject.org/)
 
