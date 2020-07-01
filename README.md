@@ -26,7 +26,7 @@ This project is meant to experiment with using linked data vocabularies in a dis
 
 ## Contributing
 
-Please
+Please do!
 
 ## License
 
