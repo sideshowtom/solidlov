@@ -10,7 +10,6 @@ This project was created to facilitate and explore the use of [Linked Open Vocab
   - [Dependencies](#Dependencies)
   - [Use Cases](#Use-Cases)
   - [Contributing](#Contributing)
-  - [License](#License)
 
 ## Assumptions
 
@@ -34,10 +33,5 @@ Coming soon...
 
 Please do!
 
-## License
-
-This project is licensed under the [CC0 1.0 Universal](LICENSE.md)
-Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
-details
 
 
