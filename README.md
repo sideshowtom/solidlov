@@ -1,4 +1,4 @@
-# Solid Linked Open Vocabularies: SolidLoV
+# Solid Linked Open Vocabularies: SolidLoV    !(/assets/images/tux.png)
 
 This project was created to facilitate and explore the use of [Linked Open Vocabularies](https://lov.linkeddata.es/dataset/lov) with [Solid Pods](https://solidproject.org/)
 
