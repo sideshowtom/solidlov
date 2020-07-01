@@ -14,7 +14,7 @@ This project was created to facilitate and explore the use of [Linked Open Vocab
 
 ## Assumptions
 
-- Disagreement on vocabularies is necessary for human development
+- Vocabularies constantly need to evolve
 - There should be no central source of truth for vocabularies
 
 ## Goals
