@@ -16,7 +16,7 @@ Prefix(st:=<http://www.w3.org/ns/solid/terms#>)
  
 DataPropertyAssertion(dcterms:issued <> "2020-06-22"^^xsd:date)
 DataPropertyAssertion(rdfs:label <> "Solid Linked Open Vocabularies Ontology"@en)
-ObjectPropertyAssertion(cc:license <> <https://creativecommons.org/publicdomain/zero/1.0/>)
+ObjectPropertyAssertion(cc:license <> <https://opensource.org/licenses/MIT>)
 ObjectPropertyAssertion(cc:attributionURL <> <>)
 
 Declaration(Class(st:Group))
