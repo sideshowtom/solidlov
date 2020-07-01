@@ -8,6 +8,7 @@ This project was created to facilitate and explore the use of [Linked Open Vocab
   - [Assumptions](#Assumptions)
   - [Goals](#Goals)
   - [Dependencies](#Dependencies)
+  - [Use Cases](#Use%20Cases)
   - [Contributing](#Contributing)
   - [License](#License)
 
@@ -24,6 +25,10 @@ This project is meant to experiment with using linked data vocabularies in a dis
 
 - Solid
 - ActivityPub
+
+## Use Cases
+
+Coming soon...
 
 ## Contributing
 
