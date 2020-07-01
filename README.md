@@ -16,7 +16,7 @@ This project was created to facilitate and explore the use of [Linked Open Vocab
 - The more important the vocabulary, the more disagreement there will be
 - Hopefully there will never be a central source of truth for vocabularies
 
-### Goals
+## Goals
 
 This project is meant to experiment with using linked data vocabularies in a distributed way in order to facilitate work towards common goals while respecting the needs for differences in the meanings and use of common terms.
 
