@@ -4,32 +4,32 @@ This project was created to facilitate and explore the use of Linked Open Vocabu
 
 ## Summary
 
-  - [Assumptions](#Assumptions)
-  - [Goals](#Goals)
-  - [Built With](#Built With)
-  - [Contributing](#Contributing)
-  - [License](#License)
+  - [Assumptions](#assumptions)
+  - [Goals](#goals)
+  - [Built With](#built-with)
+  - [Contributing](#contributing)
+  - [License](#license)
 
-## Assumptions
+## assumptions
 
--Disagreement on vocabularies is necessary for human development
--The more important the vocabulary, the more disagreement there will be
--Hopefully there will never be a central source of truth for vocabularies
+- Disagreement on vocabularies is necessary for human development
+- The more important the vocabulary, the more disagreement there will be
+- Hopefully there will never be a central source of truth for vocabularies
 
-### Goals
+### goals
 
 This project is meant to experiment with using linked data vocabularies in a distributed way in order to facilitate work towards common goals while respecting the needs for differences in the meanings and use of common terms.
 
-## Built With
+## built-with
 
--Solid
--ActivityPub
+- Solid
+- ActivityPub
 
-## Contributing
+## contributing
 
 Please
 
-## License
+## license
 
 This project is licensed under the [CC0 1.0 Universal](LICENSE.md)
 Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
