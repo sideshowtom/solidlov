@@ -1,6 +1,6 @@
 # Solid Linked Open Vocabularies: SolidLoV
 
-This project was created to facilitate and explore the use of Linked Open Vocabularies with Solid Pods
+This project was created to facilitate and explore the use of [Linked Open Vocabularies](https://lov.linkeddata.es/dataset/lov) with [Solid Pods](https://solidproject.org/)
 
 ## Summary
 
