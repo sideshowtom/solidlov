@@ -8,7 +8,7 @@ This project was created to facilitate and explore the use of [Linked Open Vocab
   - [Assumptions](#Assumptions)
   - [Goals](#Goals)
   - [Dependencies](#Dependencies)
-  - [Use Cases](#Use%20Cases)
+  - [Use Cases](#Use-Cases)
   - [Contributing](#Contributing)
   - [License](#License)
 
