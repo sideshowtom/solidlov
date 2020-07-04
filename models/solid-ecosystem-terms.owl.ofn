@@ -1,0 +1,279 @@
+Prefix(:=<string:ontology1652278076430443#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(solid:=<http://www.w3.org/ns/solid/terms>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+
+
+Ontology(
+Declaration(Class(rdf:property))
+Declaration(Class(:Agent))
+Declaration(Class(:Application))
+Declaration(Class(:ApplicationRegistration))
+Declaration(Class(:ApplicationRegistry))
+Declaration(Class(:ApplicationRegistrySet))
+Declaration(Class(:DataRegistry))
+Declaration(Class(:DataRegistrySet))
+Declaration(Class(:Registrar))
+Declaration(Class(:Registration))
+Declaration(Class(:Registry))
+Declaration(Class(:RegistrySet))
+Declaration(ObjectProperty(:hasApplicationRegistrySet))
+Declaration(ObjectProperty(:hasDataRegistrySet))
+Declaration(ObjectProperty(:hasRegistrar))
+Declaration(ObjectProperty(:hasRegistration))
+Declaration(ObjectProperty(:hasRegistry))
+Declaration(ObjectProperty(:hasRegistrySet))
+Declaration(ObjectProperty(:registeredApplication))
+Declaration(ObjectProperty(:registeredBy))
+Declaration(ObjectProperty(:registeredWith))
+Declaration(ObjectProperty(:trustsApplication))
+Declaration(ObjectProperty(:trustsForApplicationRegistration))
+Declaration(DataProperty(:registeredAt))
+Declaration(NamedIndividual(:hasRegistrar))
+Declaration(NamedIndividual(:hasRegistration))
+Declaration(NamedIndividual(:hasRegistry))
+Declaration(NamedIndividual(:hasRegistrySet))
+Declaration(NamedIndividual(:registeredApplication))
+Declaration(NamedIndividual(:registeredAt))
+Declaration(NamedIndividual(:registeredBy))
+Declaration(NamedIndividual(:registeredWith))
+Declaration(NamedIndividual(:trustsApplication))
+Declaration(AnnotationProperty(dcterms:issued))
+Declaration(AnnotationProperty(dcterms:modified))
+Declaration(Datatype(xsd:date))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <string:ontology1652278076430443#hasApplicationRegistrySet> (Has application registry set)
+
+AnnotationAssertion(rdfs:comment :hasApplicationRegistrySet "Links an agent's registrar to an application registry set"@en)
+AnnotationAssertion(rdfs:isDefinedBy :hasApplicationRegistrySet <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :hasApplicationRegistrySet "Has application registry set"@en)
+SubObjectPropertyOf(:hasApplicationRegistrySet :hasRegistrySet)
+ObjectPropertyDomain(:hasApplicationRegistrySet :Registrar)
+ObjectPropertyRange(:hasApplicationRegistrySet :ApplicationRegistrySet)
+
+# Object Property: <string:ontology1652278076430443#hasDataRegistrySet> (Has data registry set)
+
+AnnotationAssertion(rdfs:comment :hasDataRegistrySet "Links an agent's registrar to a data registry set"@en)
+AnnotationAssertion(rdfs:isDefinedBy :hasDataRegistrySet <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :hasDataRegistrySet "Has data registry set"@en)
+SubObjectPropertyOf(:hasDataRegistrySet :hasRegistrySet)
+ObjectPropertyDomain(:hasDataRegistrySet :Registrar)
+ObjectPropertyRange(:hasDataRegistrySet :DataRegistrySet)
+
+# Object Property: <string:ontology1652278076430443#hasRegistrar> (Has registrar)
+
+AnnotationAssertion(rdfs:comment :hasRegistrar "Links an Agent to a registrar"@en)
+AnnotationAssertion(rdfs:isDefinedBy :hasRegistrar <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :hasRegistrar "Has registrar"@en)
+ObjectPropertyDomain(:hasRegistrar :Agent)
+ObjectPropertyRange(:hasRegistrar :Registrar)
+
+# Object Property: <string:ontology1652278076430443#hasRegistration> (Has registration)
+
+AnnotationAssertion(rdfs:comment :hasRegistration "Links to a registration in a given registry"@en)
+AnnotationAssertion(rdfs:isDefinedBy :hasRegistration <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :hasRegistration "Has registration"@en)
+ObjectPropertyDomain(:hasRegistration :Registry)
+ObjectPropertyRange(:hasRegistration :Registration)
+
+# Object Property: <string:ontology1652278076430443#hasRegistry> (Has registry)
+
+AnnotationAssertion(rdfs:comment :hasRegistry "Links to a registry in a registry set"@en)
+AnnotationAssertion(rdfs:isDefinedBy :hasRegistry <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :hasRegistry "Has registry"@en)
+ObjectPropertyDomain(:hasRegistry :RegistrySet)
+ObjectPropertyRange(:hasRegistry :Registry)
+
+# Object Property: <string:ontology1652278076430443#hasRegistrySet> (Has registry set)
+
+AnnotationAssertion(rdfs:comment :hasRegistrySet "Links an agent's registrar to a registry set"@en)
+AnnotationAssertion(rdfs:isDefinedBy :hasRegistrySet <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :hasRegistrySet "Has registry set"@en)
+ObjectPropertyDomain(:hasRegistrySet :Registrar)
+ObjectPropertyRange(:hasRegistrySet :RegistrySet)
+
+# Object Property: <string:ontology1652278076430443#registeredApplication> (Registered Application)
+
+AnnotationAssertion(rdfs:comment :registeredApplication "Links to the Application registered by an ApplicationRegistration"@en)
+AnnotationAssertion(rdfs:isDefinedBy :registeredApplication <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :registeredApplication "Registered Application"@en)
+ObjectPropertyDomain(:registeredApplication :ApplicationRegistration)
+ObjectPropertyRange(:registeredApplication :Application)
+
+# Object Property: <string:ontology1652278076430443#registeredBy> (Registered By)
+
+AnnotationAssertion(rdfs:comment :registeredBy "Links to the Agent that created the registration"@en)
+AnnotationAssertion(rdfs:isDefinedBy :registeredBy <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :registeredBy "Registered By"@en)
+ObjectPropertyDomain(:registeredBy :Registration)
+ObjectPropertyRange(:registeredBy :Agent)
+
+# Object Property: <string:ontology1652278076430443#registeredWith> (Registered With)
+
+AnnotationAssertion(rdfs:comment :registeredWith "Links to the client Application that was used to create the registration"@en)
+AnnotationAssertion(rdfs:isDefinedBy :registeredWith <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :registeredWith "Registered With"@en)
+ObjectPropertyDomain(:registeredWith :Registration)
+ObjectPropertyRange(:registeredWith :Application)
+
+# Object Property: <string:ontology1652278076430443#trustsApplication> (Trusts application)
+
+AnnotationAssertion(rdfs:comment :trustsApplication "Links to an Application the Agent trusts"@en)
+AnnotationAssertion(rdfs:isDefinedBy :trustsApplication <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :trustsApplication "Trusts application"@en)
+ObjectPropertyDomain(:trustsApplication :Agent)
+ObjectPropertyRange(:trustsApplication :Application)
+
+# Object Property: <string:ontology1652278076430443#trustsForApplicationRegistration> (Trusts for application registration)
+
+AnnotationAssertion(rdfs:comment :trustsForApplicationRegistration "Links to an application the agent trusts to assist with registering applications"@en)
+AnnotationAssertion(rdfs:isDefinedBy :trustsForApplicationRegistration <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :trustsForApplicationRegistration "Trusts for application registration"@en)
+SubObjectPropertyOf(:trustsForApplicationRegistration :trustsApplication)
+ObjectPropertyDomain(:trustsForApplicationRegistration :Agent)
+ObjectPropertyRange(:trustsForApplicationRegistration :Application)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <string:ontology1652278076430443#registeredAt> (Registered At)
+
+AnnotationAssertion(rdfs:comment :registeredAt "Data and time the registration was created"@en)
+AnnotationAssertion(rdfs:isDefinedBy :registeredAt <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :registeredAt "Registered At"@en)
+DataPropertyDomain(:registeredAt :Registration)
+DataPropertyRange(:registeredAt xsd:dateTime)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <string:ontology1652278076430443#Agent> (Agent)
+
+AnnotationAssertion(rdfs:comment :Agent "An agent profile for the Solid Ecosystem"@en)
+AnnotationAssertion(rdfs:isDefinedBy :Agent <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :Agent "Agent"@en)
+
+# Class: <string:ontology1652278076430443#Application> (Application)
+
+AnnotationAssertion(rdfs:comment :Application "A client software application in the Solid Ecosystem"@en)
+AnnotationAssertion(rdfs:isDefinedBy :Application <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :Application "Application"@en)
+
+# Class: <string:ontology1652278076430443#ApplicationRegistration> (Application Registration)
+
+AnnotationAssertion(rdfs:comment :ApplicationRegistration "An individual member of an Application Registry"@en)
+AnnotationAssertion(rdfs:isDefinedBy :ApplicationRegistration <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :ApplicationRegistration "Application Registration"@en)
+SubClassOf(:ApplicationRegistration :Registration)
+
+# Class: <string:ontology1652278076430443#ApplicationRegistry> (Application Registry)
+
+AnnotationAssertion(rdfs:comment :ApplicationRegistry "A collection of Application Registration instances"@en)
+AnnotationAssertion(rdfs:isDefinedBy :ApplicationRegistry <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :ApplicationRegistry "Application Registry"@en)
+SubClassOf(:ApplicationRegistry :Registry)
+
+# Class: <string:ontology1652278076430443#ApplicationRegistrySet> (Application Registry)
+
+AnnotationAssertion(rdfs:comment :ApplicationRegistrySet "A collection of Application Registry instances"@en)
+AnnotationAssertion(rdfs:isDefinedBy :ApplicationRegistrySet <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :ApplicationRegistrySet "Application Registry"@en)
+SubClassOf(:ApplicationRegistrySet :RegistrySet)
+
+# Class: <string:ontology1652278076430443#DataRegistry> (Data Registry)
+
+AnnotationAssertion(rdfs:comment :DataRegistry "A collection of Data Registration instances"@en)
+AnnotationAssertion(rdfs:isDefinedBy :DataRegistry <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :DataRegistry "Data Registry"@en)
+SubClassOf(:DataRegistry :Registry)
+
+# Class: <string:ontology1652278076430443#DataRegistrySet> (Data Registry)
+
+AnnotationAssertion(rdfs:comment :DataRegistrySet "A collection of Data Registry instances"@en)
+AnnotationAssertion(rdfs:isDefinedBy :DataRegistrySet <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :DataRegistrySet "Data Registry"@en)
+SubClassOf(:DataRegistrySet :RegistrySet)
+
+# Class: <string:ontology1652278076430443#Registrar> (Registrar)
+
+AnnotationAssertion(rdfs:comment :Registrar "A collection of an Agent's registry sets"@en)
+AnnotationAssertion(rdfs:isDefinedBy :Registrar <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :Registrar "Registrar"@en)
+
+# Class: <string:ontology1652278076430443#Registration> (Registration)
+
+AnnotationAssertion(rdfs:comment :Registration "An individual member of a Registry"@en)
+AnnotationAssertion(rdfs:isDefinedBy :Registration <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :Registration "Registration"@en)
+
+# Class: <string:ontology1652278076430443#Registry> (Registry)
+
+AnnotationAssertion(rdfs:comment :Registry "A collection of things pertinent to the operation of the Solid ecosystem"@en)
+AnnotationAssertion(rdfs:isDefinedBy :Registry <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :Registry "Registry"@en)
+
+# Class: <string:ontology1652278076430443#RegistrySet> (Registry Set)
+
+AnnotationAssertion(rdfs:comment :RegistrySet "A collection of Registry instances"@en)
+AnnotationAssertion(rdfs:isDefinedBy :RegistrySet <string:ontology1652278076430443>)
+AnnotationAssertion(rdfs:label :RegistrySet "Registry Set"@en)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <string:ontology1652278076430443#hasRegistrar> (Has registrar)
+
+ClassAssertion(rdf:property :hasRegistrar)
+
+# Individual: <string:ontology1652278076430443#hasRegistration> (Has registration)
+
+ClassAssertion(rdf:property :hasRegistration)
+
+# Individual: <string:ontology1652278076430443#hasRegistry> (Has registry)
+
+ClassAssertion(rdf:property :hasRegistry)
+
+# Individual: <string:ontology1652278076430443#hasRegistrySet> (Has registry set)
+
+ClassAssertion(rdf:property :hasRegistrySet)
+
+# Individual: <string:ontology1652278076430443#registeredApplication> (Registered Application)
+
+ClassAssertion(rdf:property :registeredApplication)
+
+# Individual: <string:ontology1652278076430443#registeredAt> (Registered At)
+
+ClassAssertion(rdf:property :registeredAt)
+
+# Individual: <string:ontology1652278076430443#registeredBy> (Registered By)
+
+ClassAssertion(rdf:property :registeredBy)
+
+# Individual: <string:ontology1652278076430443#registeredWith> (Registered With)
+
+ClassAssertion(rdf:property :registeredWith)
+
+# Individual: <string:ontology1652278076430443#trustsApplication> (Trusts application)
+
+ClassAssertion(rdf:property :trustsApplication)
+
+
+AnnotationAssertion(dcterms:issued <string:ontology1652278076430443> "2020-06-14"^^xsd:date)
+AnnotationAssertion(dcterms:modified <string:ontology1652278076430443> "2020-06-14"^^xsd:date)
+AnnotationAssertion(rdfs:label <string:ontology1652278076430443> "Solid ecosystem terms"@en)
+)
