@@ -18,7 +18,7 @@ This project was created to facilitate and explore the use of [Linked Open Vocab
 
 ## Goals
 
-This project is meant to experiment with using linked data vocabularies in a distributed way in order to facilitate work towards common goals while respecting the needs for differences in the meanings and use of common terms.
+This project is meant to experiment with using Linked Data Vocabularies in a distributed way using Solid pods in order to facilitate work towards common goals while respecting the needs for differences in the meanings and use of common terms.
 
 ## Dependencies
 
