@@ -28,7 +28,7 @@ This project is meant to experiment with using Linked Data Vocabularies in a dis
 
 ## Use Cases
 
-[A work in progress...](../master/use%20cases/use%20cases.md)
+[A work in progress...](../blob/master/use%20cases/use%20cases.md)
 
 ## Contributing
 
