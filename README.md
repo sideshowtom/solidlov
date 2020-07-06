@@ -28,7 +28,7 @@ This project is meant to experiment with using Linked Data Vocabularies in a dis
 
 ## Use Cases
 
-Coming soon...
+[A work in progress...](https://github.com/sideshowtom/solidlov/tree/master/use%20cases)
 
 ## Contributing
 
