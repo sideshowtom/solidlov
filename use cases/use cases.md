@@ -10,7 +10,7 @@
 
 - Vocabularies are constantly evolving
 - Creating and maintaining vocabularies is a social enterprise
-- There is no central source of truth for ontologies/vocabularies (hereinafter just called vocabularies)
+- There is no central source of truth for vocabularies
 - Vocabularies can be private
 
 
