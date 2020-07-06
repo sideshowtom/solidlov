@@ -16,6 +16,7 @@ This project was created to facilitate and explore the use of [Linked Open Vocab
 - Creating and maintaining vocabularies is a social enterprise
 - Vocabularies constantly need to evolve
 - There should be no central source of truth for vocabularies
+- Vocabularies can be private
 
 ## Goals
 
