@@ -46,5 +46,7 @@
 - Descendant: A vocabulary cloned from an ancestor and changed or intended to be changed in some way
 - Local: On the same Solid pod.  These are not necessarily private.
 - Remote: On a different Solid pod
+- Restrict: To specify access according to Solid protocols
+- Subscribe: To get notifications according to ActivityPub protocols
 - Vocabulary: An ontology in OWL or RDFS
 
