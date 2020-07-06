@@ -27,7 +27,7 @@
 
 - An agent that uses a vocabulary subscribes to updates
 
-- An agent maintains a vocabulary and and sends information about updates to subscribers
+- An agent maintains a vocabulary and sends information about updates to subscribers
 
 - An agent that maintains a vocabulary subscribes to updates to ancestral vocabularies
 
