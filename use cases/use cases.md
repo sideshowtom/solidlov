@@ -41,14 +41,10 @@
 
 ## Terms
 
+- Agent: An individual, group, or app
+- Ancestral: A vocabulary with descendants
+- Descendant: A vocabulary cloned from an ancestor and changed or intended to be changed in some way
+- Local: On the same Solid pod.  These are not necessarily private.
+- Remote: On a different Solid pod
 - Vocabulary: An ontology in OWL or RDFS
 
-- Agent: An individual, group, or app
-
-- Local: On the same Solid pod.  These are not necessarily private.
-
-- Remote: On a different Solid pod
-
-- Descendant: A vocabulary cloned from an ancestor and changed or intended to be changed in some way
-
-- Ancestral: A vocabulary with descendants
