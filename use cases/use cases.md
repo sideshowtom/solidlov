@@ -25,13 +25,13 @@
 
 - An agent creates a descendant vocabulary by copying an ancestral vocabulary and making changes to it.  Descendant and ancestral vocabularies can be either local or remote.
 
-- An agent that uses a vocabulary subscribes to updates
+- An agent that uses a vocabulary, or a class or property in a vocabulary, subscribes to updates to the vocabulary, class or property.  In the case of classes and properties, the agent is given a choice of subscribing to all or some base classes or properties, and if some of those bases are in prerequisite vocabularies then the agent is given a choice of which of those bases and vocabularies are included in the subscription.  In the case of subscribing to an entire vocabulary, the agent is given a choice of which prerequisite vocabularies to include in the subscription.
 
-- An agent maintains a vocabulary and sends information about updates to subscribers
+- An agent maintains a vocabulary, class, or property and sends information about updates to subscribers
 
-- An agent that maintains a vocabulary subscribes to updates to ancestral vocabularies
+- An agent that maintains a vocabulary, class or property subscribes to updates to ancestral vocabularies, classes or properties
 
-- An agent that maintains a vocabulary subscribes to updates to descendant vocabularies
+- An agent that maintains a vocabulary, class or property subscribes to updates to descendant vocabularies, classes or properties
 
 - An agent restricts access to a vocabulary to certain persons or groups
 
@@ -39,14 +39,20 @@
 
 - An agent collects local vocabularies and optimizes them for search efficiency
 
+- An agent sets or gets a form or html template associated with a vocabulary to be sent to subscribers when the vocabulary is updated.  The form or template will have boilerplate and also fields for the changed items.
+
+- An agent sets or gets a form or html template associated with a class or property in a vocabulary to be sent to subscribers when the the class or property is updated. The form or template will have boilerplate that includes information about the vocabulary and also fields for the changed items.
+
+
 ## Terms
 
 - Agent: An individual, group, or app
 - Ancestral: A vocabulary with descendants
 - Descendant: A vocabulary cloned from an ancestor and changed or intended to be changed in some way
 - Local: On the same Solid pod.  These are not necessarily private.
+
+- Prerequisite: A vocabulary that is included or imported in a dependent vocabulary
 - Remote: On a different Solid pod
 - Restrict: To specify access according to Solid protocols
 - Subscribe: To get notifications according to ActivityPub protocols
 - Vocabulary: An ontology in OWL or RDFS
-
