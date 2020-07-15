@@ -22,7 +22,7 @@ This project was created to facilitate and explore the use of [Linked Open Vocab
 
 This project is meant to experiment with using [Linked Open Vocabularies](https://lov.linkeddata.es/dataset/lov/) in a distributed way using Solid pods in order to facilitate work towards common goals while respecting the needs for differences in the meanings and use of common terms.  
 
-This is partially inspired by [Skohub](https://skohub.io) and it use of ActivityPub, but extended to general OWL or RDFS ontologies or vocabularies and allowing them to evolve in a distributed way on Solid pods.
+This is partially inspired by [Skohub](https://skohub.io) and it use of [ActivityPub](https://en.wikipedia.org/wiki/ActivityPub) but extended to general OWL or RDFS ontologies or vocabularies and allowing them to evolve in a distributed way on Solid pods.
 
 ## Dependencies
 
