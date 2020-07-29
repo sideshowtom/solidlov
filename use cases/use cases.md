@@ -53,5 +53,5 @@
 - Prerequisite: A vocabulary that is included or imported in a dependent vocabulary
 - Remote: On a different Solid pod
 - Restrict: To specify access according to Solid protocols
-- Follow: To get notifications according to ActivityPub protocols
+- Follow: To get notifications according to ActivityPub protocols.  Following is not the same as mirroring and dies not entail being consistent with what is followed.
 - Vocabulary: An ontology in OWL or RDFS
